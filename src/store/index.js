@@ -22,5 +22,5 @@ const store = createStore(counterReducer);
 
 // store.dispatch({ type: "increment" });
 // store.dispatch({ type: "decrement" });
-
+// later in this course
 export default store;
