@@ -1,3 +1,4 @@
 # React Toggle cunter
 ## 🟢 Work in progress...
-![maxresdefault](https://github.com/user-attachments/assets/18c245fd-4be2-474b-b573-57d45becf7e6)
+<img width="500" alt="redux" src="https://github.com/user-attachments/assets/a3429aa9-adcd-4c7c-9bc6-26959c5aa426" />
+<img width="500" alt="redux1-624x347" src="https://github.com/user-attachments/assets/eaa580cd-38eb-490a-810d-ee08bea2064f" />
