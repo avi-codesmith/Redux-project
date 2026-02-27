@@ -1,11 +1,14 @@
 // import { Component } from "react";
 // import { connect } from "react-redux";
+import { useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import classes from "./Counter.module.css";
 
 const Counter = () => {
+  const input = useRef();
   const counter = useSelector((state) => state.counter);
+  const showCount = useSelector((state) => state.showCount);
   const dispatch = useDispatch();
 
   const handleInc = () => {
@@ -14,21 +17,34 @@ const Counter = () => {
     });
   };
 
+  const increase = () => {
+    dispatch({ type: "increase", amount: Number(input.current.value) });
+    input.current.value = "";
+  };
+
   const handleDec = () => {
     dispatch({ type: "decrement" });
   };
 
-  const toggleCounterHandler = () => {};
+  const toggleCounterHandler = () => {
+    dispatch({ type: "toggle" });
+  };
 
   return (
     <main className={classes.counter}>
       <h1>Redux Counter</h1>
-      <div className={classes.value}>{counter}</div>
+      <div className={classes.value}>{showCount ? counter : "..."}</div>
       <div>
         <button onClick={handleInc}>+</button>
+        <input placeholder="Enter a number" ref={input} type="number" />
+        <button className="add" onClick={increase}>
+          Add
+        </button>
         <button onClick={handleDec}>-</button>
       </div>
-      <button onClick={toggleCounterHandler}>Toggle Counter</button>
+      <button onClick={toggleCounterHandler}>
+        {showCount ? "Hide Count" : "Show Count"}
+      </button>
     </main>
   );
 };

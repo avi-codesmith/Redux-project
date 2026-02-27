@@ -22,5 +22,29 @@ button {
 button:hover,
 button:active {
   background-color: #5b14ac;
-  border-color: #5b14ac;
+}
+
+input {
+  font: inherit;
+  background-color: #3c0080;
+  border: 1px solid #3c0080;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+input:hover,
+input:active {
+  background-color: #5b14ac;
+}
+
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.add {
+  margin: 0 !important;
+  border-radius: 0 6px 6px 0 !important;
+  background-color: #5b14ac;
 }
