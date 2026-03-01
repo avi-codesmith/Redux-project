@@ -1,5 +1,5 @@
 # React Toggle counter
-## 🟢 Work in progress...
+## [🟢Live demo](https://app.netlify.com/projects/reactredux-togglecounter/overview)
 
 <img width="500" alt="redux1-624x347" src="https://github.com/user-attachments/assets/eaa580cd-38eb-490a-810d-ee08bea2064f" />
 
