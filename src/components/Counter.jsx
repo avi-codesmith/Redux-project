@@ -9,11 +9,11 @@ import classes from "./Counter.module.css";
 
 const Counter = () => {
   const input = useRef();
-  const counter = useSelector((state) => state.counter);
-  const showCount = useSelector((state) => state.showCount);
+  const counter = useSelector((state) => state.counter.counter);
+  const showCount = useSelector((state) => state.counter.showCount);
   const dispatch = useDispatch();
 
-  const handleInc = () => {
+  const handleInc = (e) => {
     dispatch(counterActions.increment());
   };
 
